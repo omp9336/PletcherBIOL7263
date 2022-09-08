@@ -22,11 +22,6 @@ output: html_document
        
 
 
-|type of bird| color|
-|:---: | :---:|
-|blue jay| blue |
-|cardinal| red | 
-|crow|black|
 
 |date|Assignment|
 |:-| :--:|

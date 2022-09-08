@@ -7,6 +7,8 @@ output: html_document
 
 # **About Me**
 
+![headshot of me](me.jpg){width=40%}
+
 ### **Educational Experiences**
 
 Graduate Career: University of Tulsa
@@ -19,5 +21,9 @@ Introduction to Biology Lab II TA: 5 semesters
 ### **Research Interests**
 
 Cliff Swallows, of course
+
 Reproductive Success of Cliff Swallows
+
 [My Website](https://www.cliffswallow.org)
+
+![the subject and site in question](Study site.jpg){width=50%}
