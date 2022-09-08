@@ -4,28 +4,35 @@ author: "Olivia Pletcher"
 date: "`r Sys.Date()`"
 output: html_document
 ---
-[Assigment1](Assignment1/assignment1.html)
 
-f```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
-## R Markdown
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+# Header 1
+## Header 2
+### Header 3
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 
-```{r cars}
-summary(cars)
-```
 
-## Including Plots
 
-You can also embed plots, for example:
 
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
+[My website](https://www.cliffswallow.org)
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
+       
+
+
+|type of bird| color|
+|:---: | :---:|
+|blue jay| blue |
+|cardinal| red | 
+|crow|black|
+
+|date|Assignment|
+|:-| :--:|
+|Sept 1| [Assignment 1](Assignment1/assignment1.html)|
+|Sept 2| [Assignment 2](Assignment2/Assignment2.html)|
+
+
+
+

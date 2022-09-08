@@ -1,0 +1,23 @@
+---
+title: "Assignment2"
+author: "Olivia Pletcher"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+# **About Me**
+
+### **Educational Experiences**
+
+Graduate Career: University of Tulsa
+Molecular Biology Lab TA: 1 Semester
+
+Undergraduate Career: University of Nebraska-Lincoln
+Introduction to Biology Lab II TA: 5 semesters
+
+
+### **Research Interests**
+
+Cliff Swallows, of course
+Reproductive Success of Cliff Swallows
+[My Website](https://www.cliffswallow.org)

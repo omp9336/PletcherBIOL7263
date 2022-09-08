@@ -1,11 +1,9 @@
 ---
-title: "Hello World"
+title: "Assignment 1"
 author: "Olivia Pletcher"
 date: "`r Sys.Date()`"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+Hello world
 
