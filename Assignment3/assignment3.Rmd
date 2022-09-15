@@ -4,4 +4,5 @@ author: "Olivia Pletcher"
 date: "`r Sys.Date()`"
 output: html_document
 ---
-# Number 6: FASTA Headers (shark_proteins_headers_only.txt)
+[part 6](shark_protein_headers_only.txt)
+[part 7](ribosome_protein.txt)
