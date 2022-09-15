@@ -33,7 +33,7 @@ Reproductive Success of Cliff Swallows
 |:-| :--:|
 |Sept 1| [Assignment 1](Assignment1/assignment1.html)|
 |Sept 8| [Assignment 2](Assignment2/Assignment2.html)|
-|Sept 15| [Assignment 3]|
+|Sept 15| [Assignment 3](Assignment3/assignment3.html)|
 
 
 

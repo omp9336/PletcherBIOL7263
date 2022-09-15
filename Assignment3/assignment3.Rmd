@@ -1,0 +1,7 @@
+---
+title: "Assignment3"
+author: "Olivia Pletcher"
+date: "`r Sys.Date()`"
+output: html_document
+---
+# Number 6: FASTA Headers (shark_proteins_headers_only.txt)
