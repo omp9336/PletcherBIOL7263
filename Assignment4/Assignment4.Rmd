@@ -8,4 +8,8 @@ output: html_document
 
 1. 2014 was the year with the most individual observations with a total of of 211249.
 
-2. 
+2. In 2014 there were 210 species observed.
+
+3. Missouri had the most total observations of 596 red-winged blackbirds.
+
+
