@@ -1,0 +1,11 @@
+---
+title: "Assignment4"
+author: "Olivia Pletcher"
+date: "`r Sys.Date()`"
+output: html_document
+---
+[My Script](scripts/assignment 4.R)
+
+1. 2014 was the year with the most individual observations with a total of of 211249.
+
+2. 
