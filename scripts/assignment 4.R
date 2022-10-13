@@ -36,7 +36,16 @@ blackbird_count %>%
   group_by(location) %>%
   summarize (sum(count))
 
-#Missouri had the most total observations of 596 red-winged blackbirds.
+#MO had the most total observations of 596 red-winged blackbirds.
 
+part_4 <- select(MBT_ebird, duration, list_ID, common_name, year)
 
+part_4.1 <- part_4 %>%
+  filter(duration < 200 & duration > 5)%>%
+  group_by(list_ID) %>%
+  summarize(num_species = length(common_name), duration = first(duration), year = first(year))%>%
+  mutate(av_spec_duration = num_species / duration)%>%
+  group_by(year)%>%
+  summarize(mean_year = mean(av_spec_duration))
 
+glimpse(part_4.1)

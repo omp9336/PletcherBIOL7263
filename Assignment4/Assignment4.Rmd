@@ -12,4 +12,12 @@ output: html_document
 
 3. Missouri had the most total observations of 596 red-winged blackbirds.
 
+4. Average observation
+
+|Year|Mean Duration Per Year|
+|:-| :--:|
+|2003| 0.03055556|
+|2004|0.06268452|
+|2009| [Assignment 3](Assignment3/assignment3.html)|
+|Sept 29| [Assignment 4](scripts/Assignment4.html)|
 
