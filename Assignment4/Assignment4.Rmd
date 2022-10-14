@@ -15,9 +15,20 @@ output: html_document
 4. Average observation
 
 |Year|Mean Duration Per Year|
-|:-| :--:|
-|2003| 0.03055556|
+|:-|:-:|
+|2003|0.03055556|
 |2004|0.06268452|
-|2009| [Assignment 3](Assignment3/assignment3.html)|
-|Sept 29| [Assignment 4](scripts/Assignment4.html)|
+|2009|0.13333333|
+|2013|0.18666667|
+|2014|0.30391086|
+|2015|0.27567568|
+|2016|0.29675926|
+|2017|0.38439606|
+|2018|0.29077242|
+|2019|0.25301860|
+|2020|0.50292476|
+|2021|0.26699252|
+|2022|0.44163576|
+
+[Bird list filtered by top 10 species]("Assignment4/top_10_table.csv")
 

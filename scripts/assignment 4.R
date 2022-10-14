@@ -1,5 +1,9 @@
 library(tidyverse)
 
+library(dplyr)
+
+library(tidyr)
+
 as_tibble(MBT_ebird)
 
 glimpse(MBT_ebird)
@@ -49,3 +53,20 @@ part_4.1 <- part_4 %>%
   summarize(mean_year = mean(av_spec_duration))
 
 glimpse(part_4.1)
+
+#I made a table based on 4.1. 
+
+top10 <- MBT_ebird %>%
+  select(common_name, count)%>%
+  group_by(common_name)%>%
+  summarize(total_count = sum(count))%>%
+  arrange(desc(total_count))
+
+glimpse(top10)
+
+
+fulltop10 <- left_join(top10, MBT_ebird)
+
+write.csv(fulltop10, file = "Assignment4/top_10_table.csv")
+
+#now the top 10 species list acted as a filter and should be saved as a whole file
