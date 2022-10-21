@@ -5,7 +5,7 @@ date: "`r Sys.Date()`"
 output: html_document
 ---
 
-1. Map of my climate niche ( )
+1. ![Map of my climate niche](Climate map.JPG)
 
 2. ![Scatter Plot: I prefer climates with relatively high lowest temperatures and higher precipitation during the hottest quarter](Final niche.JPG)
 
