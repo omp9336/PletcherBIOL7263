@@ -30,5 +30,5 @@ output: html_document
 |2021|0.26699252|
 |2022|0.44163576|
 
-[Bird list filtered by top 10 species]("Assignment4/top_10_table.csv")
+[Bird list](Assignment4/MBT_ebird.csv)
 
