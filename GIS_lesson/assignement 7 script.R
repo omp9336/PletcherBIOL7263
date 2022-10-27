@@ -114,13 +114,14 @@ my_world
 
 plot(my_world)
 plot(countries, add =TRUE)
-points(my_sites_shape, pch = 16)
+points(my_sites_shape, pch = 16, col = "blue2")
 
 writeRaster(my_world, "GIS_lesson/My_Climate_Space/my_world", format = "GTiff", overwrite = TRUE, progress = "text")
 
 my_world_threshold <- my_world >= quantile(my_world, 0.75)
 
 plot(my_world_threshold)
+points(my_sites_shape, pch = 16, col = "blue2")
 
 my_world_threshold <- calc(my_world_threshold, fun=function(x) ifelse(x==0 | is.na(x), NA, 1))
 

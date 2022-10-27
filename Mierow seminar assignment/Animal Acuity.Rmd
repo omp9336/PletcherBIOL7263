@@ -1,0 +1,46 @@
+---
+title: "Mierow seminar assignment"
+author: "Olivia Pletcher"
+date: "`r Sys.Date()`"
+output: html_document
+---
+## 1. Barn owl
+
+![1 inch](barn_owl1.jpg){width=20%}
+
+![2 inch](barn_owl2.jpg){width=20%}
+
+![3 inch](barn_owl3.jpg){width=20%}
+
+## 2. Mallard
+
+![1 inch](duck1.jpg){width=20%}
+
+![2 inch](duck2.jpg){width=20%}
+
+![3 inch](duck3.jpg){width=20%}
+
+## 3. Griffon
+
+![5 meters](griffon_vulture1.jpg){width=20%}
+
+![10 meters](griffon_vulture2.jpg){width=20%}
+
+![15 meters](griffon_vulture3.jpg){width=20%}
+
+## 4. Blue Jay
+
+![1 inch](Blue_jay1.jpg){width=20%}
+
+![2 inch](Blue_jay2.jpg){width=20%}
+
+![3 inch](Blue_jay3.jpg){width=20%}
+
+## 5. Carolina Chickadee
+
+![1 inch](chickadee1.jpg){width=20%}
+
+![2 inch](chickadee2.jpg){width=20%}
+
+![3 inch](chickadee3.jpg){width=20%}
+
