@@ -34,11 +34,11 @@ Reproductive Success of Cliff Swallows
 |Sept 1| [Assignment 1](Assignment1/assignment1.html)|
 |Sept 8| [Assignment 2](Assignment2/Assignment2.html)|
 |Sept 15| [Assignment 3](Assignment3/assignment3.html)|
-|Sept 29| [Assignment 4](scripts/Assignment4.html)|
+|Sept 29| [Assignment 4](Assignment4/Assignment4_fix.html)|
 |Sept 29| [Assignment 5] |
 |Oct 11| [Assignment 6] |
 |Oct 18| [Assignment 7]
-|Oct 27| [Mierow Seminar Assignment](Mierow seminar assignment/Animal Acuity.Rmd)
+|Oct 27| [Mierow Seminar Assignment](Mierow seminar assignment/Animal-Acuity.html)
 
 
 
