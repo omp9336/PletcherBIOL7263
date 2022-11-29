@@ -38,9 +38,10 @@ plot(spcells, main = "cells", axes = TRUE)
 spjpines1 <- elide(spjpines, scale=TRUE, unitsq=TRUE)
 summary(spjpines1)#now the max = 1
 
-#Now we can set up a compareable dataframe
+#Now we can set up a comparable data frame
 dpp<-data.frame(rbind(coordinates(spjpines1),coordinates(spred), 
                       coordinates(spcells)))
+print(dpp)
 
 njap<-nrow(coordinates(spjpines1))
 nred<-nrow(coordinates(spred))
@@ -48,6 +49,8 @@ ncells<-nrow(coordinates(spcells))
 
 dpp<-cbind(dpp,c(rep("JAPANESE",njap), rep("REDWOOD", nred), rep("CELLS", ncells))) 
 names(dpp)<-c("x", "y", "DATASET")
+
+print(dpp)
 
 library(lattice)
 print(xyplot(y~x|DATASET, data=dpp, pch=19, aspect=1))

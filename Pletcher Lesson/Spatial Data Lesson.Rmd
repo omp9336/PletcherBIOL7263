@@ -10,6 +10,12 @@ output: html_document
 
 [whole script](Spatial Script 2.R) just in case
 
+#### This is mainly to visualize and analyze spatial data to determine if it is uniform, clustered, or randomly spaced.
+
+#### There's way more in-depth ways to analyze patterns in spatial and/or temporal data, but this is a way to begin to see if there is a pattern in spatial data at both large and small scales.
+
+___
+
 **Packages to Download**
 
 ```
@@ -31,6 +37,8 @@ data("redwoodfull")
 data("cells")
 
 ```
+**1. Standardizing and visualizing Spatial Data**
+
 We can look at the plots for each of these basic point pattern data sets
 
 ```
@@ -42,11 +50,10 @@ plot(cells, main = "cells", axes = TRUE)
 ![1](japanesepines.png){width=40%}, ![2](redwoodfull.png){width=40%} ![3](cells.png){width=40%}
 
 
-These are point pattern data sets, or in `ppp` format:
+These are point pattern data sets, or in `ppp` format aka "cartesian corrdinates of points in a two-dimensional plane"
 
-"cartesian corrdinates of points in a two-dimensional plane"
+we need the the points in a format that can be used by `SpatStat` and can include more information about each point
 
-we need the the points in a format that can be used by `SpatStat` 
 We need to convert to `SpatialPoints`
 
 ```
@@ -55,7 +62,7 @@ spred <- as(redwoodfull, "SpatialPoints")
 spcells <- as(cells, "SpatialPoints")
 
 ```
-`SpatStat` returns data to its original scale
+`SpatialPoints` returns data to its original scale
 
 However, these are not directly comparable
 
@@ -72,5 +79,43 @@ summary(spcells)#max of 1
 The Japanese pines have a max x axis of 5.7
 
 Thankfully, we can use the `elide` method for standardizing `SpatialPoints` scales
+```
+spjpines1 <- elide(spjpines, scale=TRUE, unitsq=TRUE)
+summary(spjpines1)#now the max = 1
+```
+Now we can set up a comparable data frame
 
-Tests for Complete Spatial Randomness (CSR)
+```
+dpp<-data.frame(rbind(coordinates(spjpines1),coordinates(spred), 
+                      coordinates(spcells)))
+print(dpp)
+```
+However, we need it to differentiate between the 3 different categories
+
+```
+njap<-nrow(coordinates(spjpines1))
+nred<-nrow(coordinates(spred))
+ncells<-nrow(coordinates(spcells))
+
+dpp<-cbind(dpp,c(rep("JAPANESE",njap), rep("REDWOOD", nred), rep("CELLS", ncells))) 
+names(dpp)<-c("x", "y", "DATASET")
+
+print(dpp)
+```
+Now we can look at the standardized data as a whole
+
+```
+print(xyplot(y~x|DATASET, data=dpp, pch=19, aspect=1))
+```
+Correct standardized plots
+![triple plot](triple plot.png){width=50%}
+
+**if we didn't standardize the spacing of the Japanese pines,** 
+
+*we would have gotten this*
+![incorrect plots](wrong triple plot.png){width=50%}
+
+From the looks of it, redwood trees seem clustered in a few places, cells seem spaced evenly, and pines seem possibly random...
+
+
+**2.Testing for Complete Spatial Randomness (CSR)**
