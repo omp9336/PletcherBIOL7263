@@ -1,0 +1,14 @@
+---
+title: "Spatial Data Lesson"
+author: "Olivia Pletcher"
+date: "`r Sys.Date()`"
+output: html_document
+---
+## **Analysis of Spatial Point Patterns**
+
+##### With much help from [Use R: Applied Spatial Data Analysis with R](https://link.springer.com/book/10.1007/978-1-4614-7618-4) by Roger S. Bivand, Edzer Pebesma, Virgilio Gomez-Rubio
+
+Packages to Download
+
+
+Tests for Complete Spatial Randomness (CSR)

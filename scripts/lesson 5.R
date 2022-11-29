@@ -79,3 +79,37 @@ p7<-ggplot(RepEx, aes(Obs, Measure))+
   stat_summary(geom = "errorbar", 
                width = 0.3) 
 p7
+
+require(tidyverse)
+
+view(assignment6part1)
+
+pt1 <- assignment6part1 %>%
+  pivot_longer(
+    cols = "Sample1_Male_Control":"Sample20_Female_Treatment", 
+    names_to = "sample",
+    values_to = "measurement"
+    )
+
+view(pt1)
+
+pt2 <- pt1 %>%
+  pivot_wider(
+    names_from = ID, values_from = measurement
+  )
+  
+
+view(pt2)               
+
+pt3 <- assignment6part2 %>%
+  pivot_longer(
+    cols = "Sample16.Treatment":"Sample13.Control",
+    names_to = "sample",
+    values_to = "mass"
+  )
+
+library(stringr)
+
+install.packages("stringr")
+
+as_tibble(pt2)
