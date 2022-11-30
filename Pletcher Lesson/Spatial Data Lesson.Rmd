@@ -37,7 +37,7 @@ data("redwoodfull")
 data("cells")
 
 ```
-**1. Standardizing and visualizing Spatial Data**
+### **1. Standardizing and Visualizing Spatial Data** ###
 
 We can look at the plots for each of these basic point pattern data sets
 
@@ -117,8 +117,9 @@ Correct standardized plots
 
 From the looks of it, redwood trees seem clustered in a few places, cells seem spaced evenly, and pines seem possibly random...
 
+_____
 
-**2.Testing for Complete Spatial Randomness (CSR)**
+### **2.Testing for Complete Spatial Randomness (CSR)** ###
 
 **G function: Distance to the Nearest Event** 
 
@@ -179,3 +180,55 @@ There are stats that go with these graphs, but
 #### Cells shows a more *regular pattern* (values of G *below* the envelopes) ####
 
 #### Japanese Pines seem to fit in the null envelope of Complete Spatial Randomness ####
+
+_____
+### **3. Second Order Properties** ###
+Second-order properties measure the strength and type of the interactions between events of the point process
+
+We want to measure strength and types of interactions between points
+
+**K-function measures the number of events found up to a given distance of any particular event**
+
+
+We will be using the `Kest` and `envelope` functions
+
+```
+Kenvjap<-envelope(as(spjpines1, "ppp"), fun=Kest, r=r, nrank=2, nsim=99) #we are still using the standardized pine plot(spjpines1)
+
+Kenvred<-envelope(as(spred, "ppp"), fun=Kest, r=r, nrank=2, nsim=99)
+
+Kenvcells<-envelope(as(spcells, "ppp"), fun=Kest, r=r, nrank=2, nsim=99)
+```
+Once again, R creates a random envelope range following the null of CSR
+
+Time to combine: 
+
+```
+Kresults<-rbind(Kenvjap, Kenvred, Kenvcells)
+
+Kresults<-cbind(Kresults, 
+                y=rep(c("JAPANESE", "REDWOOD", "CELLS"), each=length(r)))
+summary(Kresults)
+```
+And the plot of all 3: 
+
+```
+print(xyplot((obs-theo)~r|y, data=Kresults, type="l", 
+             ylim= c(-.06, .06), ylab=expression(hat(K) (r)  - pi * r^2),
+             panel=function(x, y, subscripts)
+             {
+               Ktheo<- Kresults$theo[subscripts]
+               
+               lpolygon(c(r, rev(r)), 
+                        c(Kresults$lo[subscripts]-Ktheo, rev(Kresults$hi[subscripts]-Ktheo)),
+                        border="gray", col="gray"
+               )
+               
+               llines(r, Kresults$obs[subscripts]-Ktheo, lty=2, lwd=1.5, col="black")	
+             }
+))
+```
+![K function](K function plot.png)
+
+
+#### Japanese Pines seem to follow CSR while redwood and cells do not ####
