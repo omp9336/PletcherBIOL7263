@@ -9,4 +9,4 @@ output: html_document
 
 Part 1: Merged File [Results](results.csv)
 
-Part 2: Residual Mass and treatment
+Part 2: Residual Mass and treatment [SD_residual_mass](SD_residual_mass.csv) (I'm honestly not sure if I did this right)
