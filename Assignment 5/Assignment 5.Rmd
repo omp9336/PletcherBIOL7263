@@ -5,4 +5,8 @@ date: "`r Sys.Date()`"
 output: html_document
 ---
 
-This is for assignment 5
+[Script](Assignment 5 script.R) is for assignment 5
+
+Part 1: Merged File [Results](results.csv)
+
+Part 2: Residual Mass and treatment
