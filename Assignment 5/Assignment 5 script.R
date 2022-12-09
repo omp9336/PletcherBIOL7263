@@ -43,6 +43,15 @@ pt3.1<-select(pt3, -"ID")
 as_tibble(pt3.1)
 
 
-
-pt2 %>%
+results <- pt2 %>%
   full_join(pt3.1, by = "sample")
+
+write.table(results, file = "~/Seminar 2022/PletcherBIOL7263/Assignment 5\\results.csv")
+
+sdresults <- mutate(results, residbm = mass / body_length)
+
+as_tibble(sdresults)
+
+SD_residual_mass <-summarize(sdresults, meanresid = mean(residbm, na.rm=TRUE), SD_resid = sd(residbm, na.rm=TRUE))
+
+write.table(SD_residual_mass, file = "~/Seminar 2022/PletcherBIOL7263/Assignment 5\\SD_residual_mass.csv")

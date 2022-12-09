@@ -82,6 +82,8 @@ p7
 
 require(tidyverse)
 
+
+
 view(assignment6part1)
 
 pt1 <- assignment6part1 %>%
