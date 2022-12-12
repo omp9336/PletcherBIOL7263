@@ -6,7 +6,7 @@ output: html_document
 ---
 # **About Me**
 
-![headshot of me](me.jpg){width=40%})
+![headshot of me](me.jpg){width=40%}
 
 ### **Educational Experiences**
 
@@ -25,7 +25,7 @@ Reproductive Success of Cliff Swallows
 
 [My Website](https://www.cliffswallow.org)
 
-![the subject and site in question](Study site.jpg){width=50%})
+![the subject and site in question](Study site.jpg){width=50%}
 
 [My Lesson](Pletcher Lesson/Spatial-Data-Lesson.html)
 
