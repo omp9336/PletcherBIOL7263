@@ -36,7 +36,7 @@ Reproductive Success of Cliff Swallows
 |Sept 15| [Assignment 3](Assignment3/assignment3.html)|
 |Sept 29| [Assignment 4](Assignment4/Assignment4_fix.html)|
 |Sept 29| [Assignment 5](Assignment 5/Assignment-5.html) |
-|Oct 11| [Assignment 6] |
+|Oct 11| [Assignment 6](Heatmaps/Tropical-Ecology-Script.html) |
 |Oct 18| [Assignment 7](GIS_lesson/Assignment-7.html)|
 |Oct 27| [Mierow Seminar Assignment](Mierow seminar assignment/Animal-Acuity.html)
 |Nov 28| [Herrboldt Heatmaps Assignment](Heatmaps/Heatmap-Homework.html)
