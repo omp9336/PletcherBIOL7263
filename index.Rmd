@@ -40,7 +40,7 @@ Reproductive Success of Cliff Swallows
 |Oct 18| [Assignment 7](GIS_lesson/Assignment-7.html)|
 |Oct 27| [Mierow Seminar Assignment](Mierow seminar assignment/Animal-Acuity.html)
 |Nov 28| [Herrboldt Heatmaps Assignment](Heatmaps/Heatmap-Homework.html)
-|Dec 05| [Teaching myself ANOVAS and BoxPlots](Heatmaps/Tropical-Ecology-Script.html)
+|Dec 05| [Teaching myself ANOVAS, TUKEY HDS, and BoxPlots](Heatmaps/Teaching-Myself.html)
 
 
 
