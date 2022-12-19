@@ -3,7 +3,7 @@ library(dplyr)
 install.packages("ggplot2")
 library(ggplot2)
 
-Groupsize <- read.csv("FlockSizeANOVA.csv")
+Groupsize <- read.csv("Heatmaps/Tropical Ecology/FlockSizeANOVA.csv")
 
 size.aov <- aov(Flock.Size ~ Complexity, data = Groupsize)
 
@@ -17,7 +17,7 @@ ggplot(Groupsize, aes(x= ordered(Complexity, levels = c("High", "Med", "Low")), 
         axis.title.x = element_blank()) +
   scale_fill_brewer(palette="BuPu")
 
-NumSpecies <- read.csv("NumberSpeciesANOVA.csv")
+NumSpecies <- read.csv("Heatmaps/Tropical Ecology/NumberSpeciesANOVA.csv")
 
 spec.aov <- aov(Num.Spe ~ Complexity, data = NumSpecies)
 
@@ -31,7 +31,7 @@ ggplot(NumSpecies, aes(x= ordered(Complexity, levels = c("High", "Med", "Low")),
         axis.title.x = element_blank()) +
   scale_fill_brewer(palette="BuPu")
 
-Diversity <- read.csv("DiversityANOVA.csv")
+Diversity <- read.csv("Heatmaps/Tropical Ecology/DiversityANOVA.csv")
 
 div.aov <- aov(Shannon.s.I ~ Complexity, data = Diversity)
 
